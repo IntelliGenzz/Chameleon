@@ -1,24 +1,22 @@
 # Chameleon
 
 
-[us Documentation](#) [br Documentation](#)
-
-⚖️ [PARÁGRAFO QUE RESUME A IDEIA]
+🧠 A solução consiste em um chatbot capaz de capacitar o conhecimento de mercado financeiro entre os colaboradores de uma iinstituição bancária de forma personalizada.
 
 ⚙️ Solução desenvolvida usando ReactJS, Python...[COLOCAR O RESTANTE]
 
 ## Índice
 
 - 🌐[Cenário Geral](#cenário-geral): Uma perspectiva das altas tranformações que o mercado de trabalho sofreu nas últimas décadas.
-- 🎯[Nossa Ideia](#nossa-ideia): []
-- 📈[Análise de Mercado](#análise-de-mercado): []
-- [Detalhamento de Tecnologias](#detalhamento-de-tecnologias): Uma visão mais aprofundada das tecnologias utilizadas no desenvolvimento do projeto.
-- [Planos Futuros](#planos-futuros): Uma prospecção de como podemos melhorar a nossa proposta.
-- [Nossa Equipe](#nossa-equipe): Conheça os nossos membros.
+- 🎯[Nossa Ideia](#nossa-ideia): A partir da perspectiva geral, como pretendemos promover a educação financeira entre os colaboradores de uma instituição bancária.
+- 📈[Análise de Mercado](#análise-de-mercado): Entendendo a falta de conhecimento financeiro por pessoas que ingressam em uma instituição bancárias e como podemos proporcionar o conhecimento técnico financeiro dos colaboradores
+- 💻[Detalhamento de Tecnologias](#detalhamento-de-tecnologias): Uma visão mais aprofundada das tecnologias utilizadas no desenvolvimento do projeto.
+- 📍[Planos Futuros](#planos-futuros): Uma prospecção de como podemos melhorar a nossa proposta.
+- 😀[Nossa Equipe](#nossa-equipe): Conheça os nossos membros.
 
 ## 🌐Cenário Geral
 
-O mercado de trabalho atual, especialmente no setor de tecnologia, está passando por uma transformação significativa, marcada por uma alta rotatividade de colaboradores. Em um ambiente onde a demanda por profissionais qualificados supera a oferta, empresas de todos os setores, incluindo o mercado financeiro, enfrentam o desafio de atrair e reter talentos. A rápida mudança de emprego por parte desses profissionais, que frequentemente buscam melhores oportunidades, resulta em períodos curtos de permanência nas empresas, criando uma dinâmica desafiadora para a continuidade e o sucesso dos projetos.
+O mercado de trabalho atual, especialmente no setor de tecnologia, está passando por uma transformação significativa, marcada por uma alta turnover(rotatividade de colaboradores) de colaboradores. Em um ambiente onde a demanda por profissionais qualificados supera a oferta, empresas de todos os setores, incluindo o mercado financeiro, enfrentam o desafio de atrair e reter talentos. A rápida mudança de emprego por parte desses profissionais, que frequentemente buscam melhores oportunidades, resulta em períodos curtos de permanência nas empresas, criando uma dinâmica desafiadora para a continuidade e o sucesso dos projetos.
 
 No setor de tecnologia, a rotatividade de colaboradores tornou-se uma realidade constante. Profissionais da área tech são altamente valorizados e, devido à escassez de talentos, têm à sua disposição diversas oportunidades de emprego, muitas vezes com propostas mais atraentes em termos de remuneração, benefícios e flexibilidade. Essa competição acirrada entre as empresas faz com que os profissionais mudem de emprego com mais frequência, o que, por sua vez, impacta diretamente a estabilidade das equipes e o andamento dos projetos.
 
@@ -77,7 +75,9 @@ A Análise SWOT é uma ferramenta estratégica usada para identificar e avaliar 
 2. **Conformidade Atualizada em Tempo Real:** A funcionalidade de busca em tempo real das normativas do Banco Central e das novas regulamentações do mercado financeiro mantém os colaboradores informados e em conformidade com as mais recentes exigências regulatórias.
 3. **Documentação e Treinamento Baseados em Voz:** O recurso de input de voz permite capturar e documentar processos internos que anteriormente não eram formalmente registrados, transformando o conhecimento tácito em recursos acessíveis que fortalecem a compreensão dos serviços e procedimentos internos.
 4. **Diferenciação Competitiva:** Em comparação com soluções como o Hacker Rangers, este software se diferencia por focar não apenas na conformidade técnica, mas também no aprimoramento do conhecimento financeiro e na preservação do conhecimento institucional.
-5. **Execução Local da IA:** A inteligência artificial do software roda localmente na máquina do usuário, eliminando riscos de vazamento de dados e garantindo que as informações sensíveis dos colaboradores e da empresa não sejam comprometidas. Além disso, o software não realiza retreinamento da IA com base nas conversas dos usuários, assegurando a privacidade e a segurança dos dados.
+5. **Execução Isolada da IA:** A inteligência artificial do software roda em uma instância da nuvem em um ambiente protegido, eliminando riscos de vazamento de dados e garantindo que as informações sensíveis dos colaboradores e da empresa não sejam comprometidas. Além disso, o software não realiza retreinamento da IA com base nas conversas dos usuários, assegurando a privacidade e a segurança dos dados.
+
+
 
 **Fraquezas (Weaknesses):**
 
@@ -108,7 +108,7 @@ O Canva de Proposta de Valor é uma ferramenta visual e estratégica utilizada p
 
 - **Aprimoramento do Conhecimento Financeiro:** Colaboradores ganham uma compreensão sólida dos produtos financeiros, regulamentações e melhores práticas, melhorando sua eficiência e precisão no trabalho.
 - **Conformidade em Tempo Real:** Acesso contínuo às normativas mais recentes do Banco Central e regulamentações do mercado, garantindo que a instituição permaneça sempre em conformidade.
-- **Segurança e Privacidade dos Dados:** A execução local da IA elimina o risco de vazamento de dados e garante que as informações sensíveis dos colaboradores sejam protegidas.
+- **Segurança e Privacidade dos Dados:** A execução da IA em uma instância da nuvem em um ambiente protegido, eliminando riscos de vazamento de dados e garantindo que as informações sensíveis dos colaboradores e da empresa não sejam comprometidas, elimina o risco de vazamento de dados e protege informações sensíveis.
 - **Documentação Preservada:** Processos internos não documentados anteriormente podem ser capturados e armazenados, garantindo a continuidade e o compartilhamento de conhecimento dentro da empresa.
 - **Maior Produtividade:** Acelerando o onboarding e o treinamento contínuo, os colaboradores se tornam produtivos mais rapidamente, agregando valor à empresa desde o início.
 
@@ -131,7 +131,6 @@ O Canva de Proposta de Valor é uma ferramenta visual e estratégica utilizada p
 **4. Analgésicos (Pain Relievers):**
 
 - **Educação Financeira Integrada:** O software oferece módulos de treinamento que cobrem desde conceitos básicos até tópicos avançados, ajudando a acelerar a curva de aprendizado dos colaboradores.
-- **Execução Local da IA:** A execução da IA localmente na máquina do usuário elimina o risco de vazamento de dados e protege informações sensíveis.
 - **Busca em Tempo Real de Normativas:** A ferramenta mantém a equipe sempre atualizada com as regulamentações mais recentes, garantindo conformidade contínua.
 - **Documentação Baseada em Voz:** O input de voz permite capturar e documentar processos internos, transformando o conhecimento tácito em recursos acessíveis para toda a equipe.
 
@@ -145,7 +144,7 @@ O Canva de Proposta de Valor é uma ferramenta visual e estratégica utilizada p
 **6. Criadores de Ganho (Gain Creators):**
 
 - **Capacitação Financeira de Alta Qualidade:** Proporciona um treinamento robusto e contínuo, garantindo que todos os colaboradores estejam capacitados para suas funções desde o início.
-- **Proteção de Dados Sensíveis:** Ao rodar a IA localmente, o software garante que as informações críticas da empresa sejam mantidas seguras e privadas.
+
 - **Conformidade Proativa:** O acesso em tempo real às normativas mais recentes permite que a instituição seja proativa na adaptação às mudanças regulatórias, evitando problemas de conformidade.
 - **Preservação de Conhecimento:** A documentação de processos internos através de input de voz assegura que o conhecimento institucional seja preservado e transmitido de maneira eficaz aos novos colaboradores.
 
@@ -157,4 +156,15 @@ Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma so
 # 📍 Planos Futuros
 []
 
-# Nossa equipe
+# 😀    Nossa equipe
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./thiagoPhoto.png" width="100px;" alt="Foto de Thiago Volcati" /><br><sub><b>Thiago Volcati</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./danielPhoto.png" width="100px;" alt="Foto de Daniel Gonçalves"/><br><sub><b> Daniel Gonçalves</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/joao-guilherme-salomao/"><img style="border-radius: 10%;" src="luizPhoto.jpeg" width="100px;" alt="Foto de Luiz Hiluy"/><br><sub><b>Luiz Hiluy</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./daniloPhoto.png" width="100px;" alt="Foto de Danilo Merlo"/><br><sub><b>Danilo Merlo</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./gustavoPhoto.png" width="100px;" alt="Foto de Gustavo Costa"/><br><sub><b>Gustavo Costa</b></sub></a></td> <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./juliaPhoto.png" width="100px;" alt="Foto de Julia Ishikawa " /><br><sub><b>Julia Ishikawa</b></sub></a></td>
+    </tr>
+  </table>
+</div>
