@@ -187,11 +187,7 @@ Durante a execução, o Claude-3 utiliza o bucket S3 para identificar e selecion
 1. Confidencialidade e Segurança: Utilizando o S3 em uma nuvem privada da AWS, garantimos que os dados sensíveis das empresas sejam tratados com a máxima confidencialidade, evitando o risco de vazamento de informações, uma preocupação comum ao utilizar APIs públicas de LLM.
 2. Precisão e Contextualização: Ao treinar a LLM com dados específicos da empresa e informações atualizadas de regulamentações, a Claude-3 se torna extremamente precisa e contextualizada, oferecendo respostas que refletem as realidades específicas do ambiente corporativo do usuário.
 3. Escalabilidade e Manutenção: O uso do S3 como repositório permite uma fácil atualização dos documentos, assegurando que a LLM esteja sempre utilizando as informações mais recentes. Isso também facilita a escalabilidade do sistema, à medida que mais documentos podem ser adicionados conforme necessário.
-4. Aplicações de LLMs:
-As LLMs estão sendo amplamente utilizadas em várias indústrias para uma gama de aplicações, como:
-- Assistentes Virtuais e Chatbots: Automatizando interações com clientes e respondendo a consultas complexas.
-- Análise de Documentos Jurídicos: Ajudando advogados a encontrar precedentes e informações relevantes em grandes volumes de textos legais.
-- Suporte Técnico: Oferecendo assistência a desenvolvedores e usuários com problemas técnicos, respondendo a perguntas com base em manuais e documentação interna.
+
 
 ## ⚒️BackEnd
 - **Descrição:**
@@ -251,7 +247,24 @@ A utilização integrada de várias tecnologias da AWS, como S3 e Bedrock, demon
   - Gerenciou scripts de inicialização e execução do projeto.
 
 # 📍 Planos Futuros
-[]
+
+### **Hover com Pop-up**
+- **Descrição:** Implementar uma feature de hover do mouse que abre um pop-up ao passar por cima de um texto ou elemento específico. Essa funcionalidade permitirá que o conteúdo "hoverado" seja   passado como parâmetro para outra função ou API, permitindo ações contextuais rápidas e informativas, como a exibição de descrições, links relacionados, ou a realização de consultas adicionais à LLM.
+
+### **Adição de PDFs para Revisão**
+- **Descrição:** Adicionar uma funcionalidade que permita aos usuários fazer upload de PDFs de documentos oficiais, como relatórios e diretrizes, para revisão. Esses documentos serão processados pela LLM, que os alinhará com os parâmetros específicos da empresa. Isso garantirá que todas as informações sejam revisadas e utilizadas de acordo com as políticas internas, proporcionando maior precisão e conformidade.
+
+### **Web Scraping Automatizado**
+- **Descrição:** Desenvolver um sistema de web scraping integrado a uma solução de automação que, periodicamente, acessa o site do Banco Central para baixar e atualizar dados automaticamente. Isso permitirá que a LLM sempre tenha acesso às regulamentações e dados financeiros mais recentes, melhorando a precisão das respostas fornecidas e mantendo a base de conhecimento constantemente atualizada.
+
+### **Migração para Amazon Kendra e SageMaker**
+- **Descrição:**
+  Considerar a migração para o Amazon Kendra para melhorar a gestão e a pesquisa de documentos, e para o SageMaker, que permitirá um treinamento mais especializado e contínuo da LLM. O Kendra ajudaria na organização e recuperação eficiente de informações, enquanto o SageMaker possibilitaria a criação de modelos mais robustos, personalizados para necessidades específicas da empresa.
+
+### **Automatização do Ciclo de Vida de Documentos**
+- **Descrição:**
+  Criar um sistema automatizado de gerenciamento do ciclo de vida dos documentos no S3, garantindo que apenas documentos atualizados sejam utilizados no treinamento da LLM, e que documentos obsoletos sejam arquivados ou removidos automaticamente. Isso manterá a base de conhecimento relevante e livre de informações desatualizadas.
+
 
 # 😀    Nossa equipe
 <div align="center">
