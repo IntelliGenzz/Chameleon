@@ -169,7 +169,65 @@ O Canva de Proposta de Valor é uma ferramenta visual e estratégica utilizada p
 Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma solução bem estruturada que atende diretamente às necessidades críticas das instituições financeiras, oferecendo capacitação financeira, conformidade em tempo real e preservação de conhecimento, tudo com foco na segurança e eficiência operacional.
 
 # 💻 Detalhamento de Tecnologias
+A LLM (Large Language Model) que estamos utilizando neste projeto é o Claude-3, parte do Amazon Bedrock. Modelos como o Claude-3 são redes neurais treinadas com enormes quantidades de texto, permitindo que entendam, gerem e completem textos com uma precisão impressionante. Eles são capazes de processar e analisar informações em linguagem natural, o que os torna ideais para tarefas que envolvem compreensão de textos complexos e respostas contextuais.
+## 🧠 Inteligência Artificial (LLM - CLaude-3)
 
+ - **Descrição:**
+
+ A LLM (Large Language Model) que estamos utilizando neste projeto é o Claude-3, parte do Amazon Bedrock. Modelos como o Claude-3 são redes neurais treinadas com enormes quantidades de texto, permitindo que entendam, gerem e completem textos com uma precisão impressionante. Eles são capazes de processar e analisar informações em linguagem natural, o que os torna ideais para tarefas que envolvem compreensão de textos complexos e respostas contextuais.
+
+- **Uso do Bucket S3 no Treinamento e Execução da LLM:**
+
+O bucket S3 é um componente crítico nesta arquitetura, atuando como o repositório principal para os documentos internos das empresas e para as regulamentações externas, como as postadas pelo Banco Central. Estes documentos são fundamentais para o treinamento contínuo e adaptação da LLM às necessidades específicas dos usuários. Ao armazenar esses dados no S3, garantimos que o Claude-3 tenha acesso a informações atualizadas e relevantes para responder às consultas dos usuários com base em documentos específicos.
+
+Durante a execução, o Claude-3 utiliza o bucket S3 para identificar e selecionar documentos que correspondem ao problema do usuário, com base nos títulos dos arquivos. Esses documentos são então processados e convertidos em texto para serem analisados pela LLM, permitindo uma resposta precisa e fundamentada na documentação fornecida.
+
+- **Vantagens do Uso de Claude-3 e S3**
+
+1. Confidencialidade e Segurança: Utilizando o S3 em uma nuvem privada da AWS, garantimos que os dados sensíveis das empresas sejam tratados com a máxima confidencialidade, evitando o risco de vazamento de informações, uma preocupação comum ao utilizar APIs públicas de LLM.
+2. Precisão e Contextualização: Ao treinar a LLM com dados específicos da empresa e informações atualizadas de regulamentações, a Claude-3 se torna extremamente precisa e contextualizada, oferecendo respostas que refletem as realidades específicas do ambiente corporativo do usuário.
+3. Escalabilidade e Manutenção: O uso do S3 como repositório permite uma fácil atualização dos documentos, assegurando que a LLM esteja sempre utilizando as informações mais recentes. Isso também facilita a escalabilidade do sistema, à medida que mais documentos podem ser adicionados conforme necessário.
+4. Aplicações de LLMs:
+As LLMs estão sendo amplamente utilizadas em várias indústrias para uma gama de aplicações, como:
+- Assistentes Virtuais e Chatbots: Automatizando interações com clientes e respondendo a consultas complexas.
+- Análise de Documentos Jurídicos: Ajudando advogados a encontrar precedentes e informações relevantes em grandes volumes de textos legais.
+- Suporte Técnico: Oferecendo assistência a desenvolvedores e usuários com problemas técnicos, respondendo a perguntas com base em manuais e documentação interna.
+
+## ⚒️BackEnd
+- **Descrição:**
+
+O backend do nosso projeto foi desenvolvido em Python, e sua principal função é gerenciar as requisições para a LLM Claude-3 e interagir com o bucket S3, além de processar os dados que serão utilizados na análise e resposta às consultas dos usuários. Essa parte do sistema é responsável por orquestrar o fluxo de informações entre o frontend (que fornece o input do usuário), o S3 (que armazena os documentos) e a LLM (que realiza a análise e gera as respostas).
+
+- **Arquitetura e Funcionalidade:**
+
+1. Recebimento de Input:
+O backend expõe uma rota que recebe o input de texto do usuário. Este input é normalmente uma pergunta ou um problema específico que o usuário deseja resolver. Este input é recebido através de um front-end de chatbot, que é a interface com o usuário.
+
+2. Consulta ao Bucket S3:
+Ao receber o input, o backend faz uma requisição ao bucket S3 para obter uma lista dos nomes dos documentos armazenados. Esses documentos estão padronizados com nomes que refletem seu conteúdo, facilitando a correlação entre o input do usuário e os documentos relevantes.
+
+3. Requisição para a LLM Claude-3:
+Com o input do usuário e a lista de nomes dos documentos em mãos, o backend faz uma requisição para o Claude-3. O modelo é instruído a entender o contexto do input e a selecionar os três documentos cujos títulos têm maior correlação com a consulta do usuário. A LLM então retorna um JSON com os títulos desses documentos.
+Download e Processamento dos Documentos:
+
+4. Com os títulos selecionados, o backend faz uma requisição GET para o bucket S3, baixando os documentos pertinentes. Esses documentos podem estar em diversos formatos (como áudio, PDF, ou texto), e o backend os converte para strings legíveis no Python, para que possam ser processados pela LLM.
+
+5. Geração da Resposta Final:
+Finalmente, com os documentos processados e o input do usuário, o backend faz uma nova requisição para o Claude-3, desta vez instruindo a LLM a atuar como um copilot especializado. A LLM lê os documentos e analisa o problema do usuário, fornecendo uma resposta fundamentada e contextualizada. Essa resposta é então enviada de volta ao usuário como o output final da rota.
+
+- **Vantagens da Arquitetura de Backend:**
+
+1. Segurança e Conformidade:
+O backend opera inteiramente em uma nuvem privada da AWS, garantindo que os dados processados, que podem ser altamente sensíveis, estejam seguros e conformes com as políticas de privacidade das empresas.
+
+2. Modularidade e Escalabilidade:
+A arquitetura modular permite que novas funcionalidades sejam facilmente adicionadas ao backend, e a utilização do S3 garante que o sistema possa escalar conforme necessário, sem perda de performance.
+
+3. Processamento de Dados Eficiente:
+A capacidade do backend de transformar documentos de diferentes formatos em strings legíveis permite uma análise rápida e eficiente, o que é essencial para responder às consultas dos usuários em tempo hábil.
+
+4. Integração com Tecnologias AWS:
+A utilização integrada de várias tecnologias da AWS, como S3 e Bedrock, demonstra a flexibilidade e o poder de um ecossistema unificado, otimizando tanto o desenvolvimento quanto a operação contínua do sistema.
 ## Front-end
 
 ##### 1. React
