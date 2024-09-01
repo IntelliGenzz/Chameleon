@@ -169,7 +169,28 @@ O Canva de Proposta de Valor é uma ferramenta visual e estratégica utilizada p
 Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma solução bem estruturada que atende diretamente às necessidades críticas das instituições financeiras, oferecendo capacitação financeira, conformidade em tempo real e preservação de conhecimento, tudo com foco na segurança e eficiência operacional.
 
 # 💻 Detalhamento de Tecnologias
-[A DESCREVER]
+
+## Front-end
+
+##### 1. React
+
+- **Descrição:** Biblioteca JavaScript para construção de interfaces de usuário. React permite a criação de componentes reutilizáveis que facilitam o desenvolvimento de interfaces complexas.
+- **Utilização:** 
+  - Criou os componentes de interface, como a tela de login, chat, e admin.
+  - Gerenciou o estado dos componentes e a navegação entre diferentes telas.
+
+##### 2. Tailwind CSS
+
+- **Descrição:** Framework CSS utilitário que permite a criação de interfaces personalizadas de forma rápida e eficiente, utilizando classes pré-definidas.
+- **Utilização:** 
+  - Estilizou os componentes React com classes do Tailwind, garantindo um design responsivo e moderno.
+  - Customizou o layout das telas e componentes como botões, inputs, e headers.
+
+##### 3. NPM (Node Package Manager)
+
+- **Descrição:** Gerenciador de pacotes do Node.js que permite instalar e gerenciar bibliotecas e dependências para o projeto.
+- **Utilização:** 
+  - Gerenciou scripts de inicialização e execução do projeto.
 
 # 📍 Planos Futuros
 []
