@@ -172,6 +172,68 @@ Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma so
 
 ## Front-end
 
+#### Guia de estilos
+
+<div align="center">
+<sub> Figura 3: Paleta de Cores</sub>
+<br>
+<img src='./assets/paleta.png'/>
+<br>
+<sup> Fonte: Material produzido pelos autores (2024) </sup>
+</div>
+
+##### Paleta de Cores
+A identidade visual utiliza uma paleta de cores equilibrada e moderna que combina tons neutros e cores mais vivas, o que ajuda a criar uma interface agradável e fácil de navegar. As cores principais são:
+* **Gunmetal (#1B2733):** Utilizado como a cor de fundo principal, proporcionando um contraste marcante com as outras cores mais claras.
+* **Powder blue (#B4CDED):** Um azul suave usado para destacar elementos menos críticos, mantendo a harmonia do design.
+* **Baby powder (#F0F4EF):** Um tom quase branco, utilizado para áreas de fundo mais claras, como as caixas de entrada de texto, que ajuda a criar contraste com textos e ícones.
+* **White (#FFFFFF):** O branco puro é utilizado para textos e ícones sobre os fundos mais escuros, garantindo legibilidade.
+* **Celadon (#B9EDB4):** Um verde claro que complementa o esquema de cores, usado em botões e indicadores de ações secundárias.
+* **Fern green (#3A7D44):** Um verde forte, usado para botões e o logotipo, representando ações importantes e a identidade da marca "Chameleon".
+
+
+##### Tipografia e Estilo de Elementos
+A tipografia escolhida é simples e moderna, garantindo uma legibilidade clara. Os textos são apresentados em uma cor contrastante com os fundos com o intuito de ser o mais confortável o possível para o usuário.
+
+<div align="center">
+<sub> Figura 4: Logotipo</sub>
+<br>
+<img src='./assets/Logo do Tema Claro.svg'/>
+<br>
+<sup> Fonte: Material produzido pelos autores (2024) </sup>
+</div>
+
+<div align="center">
+<sub> Figura 5: Ícone do chatbot</sub>
+<br>
+<img src='./assets/Camaleão Sólido.svg'/>
+<br>
+<sup> Fonte: Material produzido pelos autores (2024) </sup>
+</div>
+
+
+##### Elementos Gráficos e Layout
+* **Logotipo:** O logotipo da "Chameleon" é destacado no canto superior esquerdo, em um fundo verde, o que reforça a identidade da marca e a consistência visual em todas as telas.
+* **Ícones e Botões:** Os ícones são simples, minimalistas e seguem o esquema de cores da paleta. Os botões também utilizam cores de destaque como o verde, com bordas arredondadas, transmitindo uma sensação amigável e moderna.
+* **Layout:** O layout das telas é limpo e organizado, com um bom uso do espaço em branco. As caixas de texto e áreas interativas são bem delineadas, com bordas suaves, que criam uma interface agradável ao usuário.
+
+<div align="center">
+<sub> Figura 4: Fluxo de telas</sub>
+<br>
+<img src='./assets/fluxo-de-telas.png'/>
+<br>
+<sup> Fonte: Material produzido pelos autores (2024).<a href="https://www.figma.com/design/OobD0bYjaIXhlkDTOe2XNj/IntelliGenzz_Design?node-id=11-2&t=wm8fsB0W6ScPkMoR-1"> Acesso ao Template do Figma</a></sup>
+<br>
+</div>
+
+##### Aplicação em Telas
+As telas apresentadas mostram uma aplicação prática dessa identidade visual em diferentes cenários:
+* **Telas de Login:** Simples, com campos de entrada destacados e um design que incentiva o usuário a se concentrar nas ações principais.
+* **Telas de Conversa:** O intuito é ser o mais intuita e simples possível, dado que é importante ter uma experência rápida ao tirar dúvidas pontuais ou perguntar sobre regulamentações e processos de forma objetiva.
+<br><br>
+
+#### Desenvolvimento
+
 ##### 1. React
 
 - **Descrição:** Biblioteca JavaScript para construção de interfaces de usuário. React permite a criação de componentes reutilizáveis que facilitam o desenvolvimento de interfaces complexas.
@@ -191,6 +253,48 @@ Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma so
 - **Descrição:** Gerenciador de pacotes do Node.js que permite instalar e gerenciar bibliotecas e dependências para o projeto.
 - **Utilização:** 
   - Gerenciou scripts de inicialização e execução do projeto.
+
+#### Estrutura do Projeto
+* **Componentes:** O projeto é organizado em torno de componentes React, que são os blocos de construção da interface. Cada componente provavelmente serve a um propósito específico, como exibir dados, formulários, ou interagir com o backend.
+<br>
+
+
+* **Conectividade com o Back-end:** O front-end se comunica com o backend por meio de APIs RESTful. Isso permite que o aplicativo obtenha e envie dados, atualizando a interface de acordo com as interações do usuário.
+<br>
+
+* **Funcionalidades:** Algumas funcionalidades esperadas incluem autenticação de usuário, manipulação de estados internos (possivelmente com Redux ou Context API), e renderização condicional com base nos dados recebidos.
+<br>
+
+1. **components/**
+    * Função: Essa pasta abriga os componentes React. Componentes são blocos de construção reutilizáveis que definem diferentes partes da interface do usuário.
+<br>
+
+2. **Cabecalho.js**
+    * Função: Este componente representa o cabeçalho (header) da aplicação. Este inclui elementos como o logotipo. Ele é um componente fundamental na maioria dos sites, fornecendo consistência e fácil acesso às principais seções da aplicação.
+  <br>
+  
+3. **Chatbot.js**
+    * Função: Este componente integra um chatbot na interface do usuário. Um chatbot é uma ferramenta que interage com os usuários, oferecendo suporte, respondendo a perguntas ou guiando-os através de um processo específico. Essa experiência conversional é possibilitada pela interação com APIs e inteligência artificial.
+ <br>
+
+4. **Login.js**
+    * Função: Este componente é responsável pelo processo de autenticação, permitindo que os usuários façam login na aplicação. Ele protege o acesso às áreas restritas da ferramenta, aumentando a segurança e impedindo que pessoas de fora da empresa consigam ter acesso a dados sensíveis.
+<br>
+
+5. **services/**
+    * Função: Esta pasta é usada para armazenar arquivos relacionados à lógica de comunicação com APIs externas, como chamadas de API REST ou GraphQL.
+  <br>
+  
+6. **App.js e index.js**
+    * **App.js:** Serve como o ponto central de composição dos componentes da aplicação.
+    * **index.js:** O ponto de entrada da aplicação, onde o App.js é montado e renderizado no DOM.
+<br>
+
+***Finalidade Geral***
+Esses arquivos juntos formam a base de um aplicativo React, proporcionando uma estrutura organizada para o desenvolvimento, testes e implementação de funcionalidades. A estrutura modular do projeto permite que cada parte da aplicação seja desenvolvida e testada de forma independente, facilitando a manutenção e escalabilidade do projeto.
+<br><br><br>
+
+
 
 # 📍 Planos Futuros
 []
