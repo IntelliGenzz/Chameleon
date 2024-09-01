@@ -174,14 +174,14 @@ Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma so
 
 ##### 1. React
 
-- **Descrição:** Biblioteca JavaScript para construção de interfaces de usuário. React permite a criação de componentes reutilizáveis que facilitam o desenvolvimento de interfaces complexas.
+- **Descrição:** React é uma biblioteca JavaScript voltada para a construção de interfaces de usuário, que facilita a criação de componentes reutilizáveis. Esses componentes são partes independentes e encapsuladas da interface, podendo ser combinados para formar interfaces complexas e interativas. A principal característica do React é o conceito de Virtual DOM, que otimiza a atualização e renderização da interface, resultando em uma performance mais eficiente em comparação com a manipulação direta do DOM. Além disso, sua abordagem declarativa simplifica a lógica da UI, tornando o código mais previsível e fácil de depurar.
 - **Utilização:** 
   - Criou os componentes de interface, como a tela de login, chat, e admin.
   - Gerenciou o estado dos componentes e a navegação entre diferentes telas.
 
 ##### 2. Tailwind CSS
 
-- **Descrição:** Framework CSS utilitário que permite a criação de interfaces personalizadas de forma rápida e eficiente, utilizando classes pré-definidas.
+- **Descrição:** Tailwind CSS é um framework de CSS utilitário que permite criar rapidamente interfaces de usuário customizadas sem sair do HTML. Ao invés de escrever CSS personalizado para cada componente, os desenvolvedores utilizam classes utilitárias pré-definidas diretamente nos elementos HTML, o que acelera o processo de desenvolvimento e garante consistência no design.
 - **Utilização:** 
   - Estilizou os componentes React com classes do Tailwind, garantindo um design responsivo e moderno.
   - Customizou o layout das telas e componentes como botões, inputs, e headers.
