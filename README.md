@@ -69,6 +69,15 @@ COMO FIZEMOS ISSO?: [DESCREVER PARTE TÉCNICA]
 ## Análise SWOT:
 A Análise SWOT é uma ferramenta estratégica usada para identificar e avaliar os **Pontos Fortes (Strengths)**, **Pontos Fracos (Weaknesses)**, **Oportunidades (Opportunities)** e **Ameaças (Threats)** de uma empresa, projeto ou situação. Ela ajuda a entender as vantagens competitivas internas (forças) e os desafios internos (fraquezas), bem como as condições externas favoráveis (oportunidades) e os riscos (ameaças) que podem impactar o sucesso. Através dessa análise, as organizações podem desenvolver estratégias mais informadas para aproveitar seus pontos fortes, mitigar suas fraquezas, explorar oportunidades e proteger-se contra ameaças. Dado essa importância, segue a análise SWOT da Chamaleon na Figura 1:
 
+<div align="center">
+<sub> Figura 1: Análise SWOT </sub>
+<br>
+<img src='./assets/Análise_SWOT.png'/>
+<br>
+<sup> Fonte: Material produzido pelos autores (2024) </sup>
+</div>
+
+
 **Forças (Strengths):**
 
 1. **Capacitação Financeira Integrada:** O chatbot oferece capacidades abrangentes para o desenvolvimento do conhecimento financeiro dos colaboradores, garantindo que todos, independentemente de sua formação prévia, adquiram uma compreensão sólida dos conceitos financeiros e das regulamentações do setor.
@@ -101,6 +110,15 @@ Em conclusão, a análise SWOT da Chamaleon oferece uma visão clara das capacid
 ## Canvas Proposta de Valor
 
 O Canva de Proposta de Valor é uma ferramenta visual e estratégica utilizada para o desenvolvimento de produtos, soluções e projetos. Essa utilidade tem foco em garantir que uma solução proposta atenda às necessidades e desejos dos clientes. Ela ajuda a mapear e entender os benefícios que a solução proposta devem oferecer para atender as solicitações do cliente e criar ganhos significativos para eles.
+
+<div align="center">
+<sub> Figura 2: Value Proposition Canvas </sub>
+<br>
+<img src='./assets/value_proposition_canvas.png'/>
+<br>
+<sup> Fonte: Material produzido pelos autores (2024) </sup>
+</div>
+
 
 **Na seção "Segmentos de Clientes", os três principais componentes apresentados buscam trazer o papel do cliente no modelo de negócios atual e como a solução pode impacta-lo.**
 
@@ -160,11 +178,11 @@ Assim, o Canvas Proposta de Valor realizado pela equipe Chamaleon destaca uma so
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./thiagoPhoto.png" width="100px;" alt="Foto de Thiago Volcati" /><br><sub><b>Thiago Volcati</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./danielPhoto.png" width="100px;" alt="Foto de Daniel Gonçalves"/><br><sub><b> Daniel Gonçalves</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/joao-guilherme-salomao/"><img style="border-radius: 10%;" src="luizPhoto.jpeg" width="100px;" alt="Foto de Luiz Hiluy"/><br><sub><b>Luiz Hiluy</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./daniloPhoto.png" width="100px;" alt="Foto de Danilo Merlo"/><br><sub><b>Danilo Merlo</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./gustavoPhoto.png" width="100px;" alt="Foto de Gustavo Costa"/><br><sub><b>Gustavo Costa</b></sub></a></td> <td align="center"><a href="https://www.linkedin.com/in/marcoruas/"><img style="border-radius: 10%;" src="./juliaPhoto.png" width="100px;" alt="Foto de Julia Ishikawa " /><br><sub><b>Julia Ishikawa</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/thiagovolcati/"><img style="border-radius: 10%;" src="./assets/thiagoPhoto.png" width="100px;" alt="Foto de Thiago Volcati" /><br><sub><b>Thiago Volcati</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/danielaraujogon%C3%A7alves/"><img style="border-radius: 10%;" src="./assets/danielPhoto.png" width="100px;" alt="Foto de Daniel Gonçalves"/><br><sub><b> Daniel Gonçalves</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/luiz-hinuy-0995252b1/"><img style="border-radius: 10%;" src="assets/luizPhoto.jpeg" width="100px;" alt="Foto de Luiz Hiluy"/><br><sub><b>Luiz Hiluy</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/danilo-martins-merlo-381b76228/"><img style="border-radius: 10%;" src="./assets/daniloPhoto.png" width="100px;" alt="Foto de Danilo Merlo"/><br><sub><b>Danilo Merlo</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/gustavo-dacosta/"><img style="border-radius: 10%;" src="./assets/gustavoPhoto.png" width="100px;" alt="Foto de Gustavo Costa"/><br><sub><b>Gustavo Costa</b></sub></a></td> <td align="center"><a href="https://www.linkedin.com/in/julia-lika-ishikawa/"><img style="border-radius: 10%;" src="./assets/juliaPhoto.png" width="100px;" alt="Foto de Julia Ishikawa " /><br><sub><b>Julia Ishikawa</b></sub></a></td>
     </tr>
   </table>
 </div>
